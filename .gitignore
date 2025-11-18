@@ -1,0 +1,22 @@
+# Node
+node_modules/
+.npm/
+package-lock.json
+
+# Build
+dist/
+.env
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+npm-debug.log*
+
+# OS
+Thumbs.db
+
+# Optional: if you don't want to commit compiled CSS
+# src/output.css

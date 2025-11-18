@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Rahmat Ali's portfolio - Web Developer & Designer. Explore my projects, services, and skills in web development.">
+  <meta name="keywords" content="web developer, web designer, portfolio, HTML, CSS, Tailwind CSS, responsive design">
+  <meta name="author" content="Muhammad Rahmat Ali">
+  <meta name="theme-color" content="#7c3aed">
+  <meta property="og:title" content="Muhammad Rahmat Ali - Web Developer & Designer">
+  <meta property="og:description" content="Explore my web development projects and services. ICS student specializing in responsive design and web development.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muhammad Rahmat Ali - Portfolio">
+  <meta name="twitter:description" content="Web Developer & Designer specializing in responsive design">
+  <title>Muhammad Rahmat Ali - Web Developer & Designer | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="png" href="/assets/images/muhammad_rahmat_ali-generated-image.png">
+  <link rel="stylesheet" href="./output.css">
+  
+  <style>
+    /* Custom CSS for smooth scroll animations */
+    * {
+      scroll-behavior: smooth;
+    }
+    
+    /* Scroll-triggered animations */
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    
+    .scroll-animate.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Custom gradient backgrounds */
+    .dark-gradient {
+      background: linear-gradient(135deg, #0b0426 0%, #1a0830 50%, #2a1140 100%);
+    }
+    
+    .card-gradient {
+      background: linear-gradient(145deg, #12061a 0%, #2b0f3a 100%);
+    }
+    
+    /* Hover animations */
+    .hover-lift {
+      transition: all 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Text animations */
+    .text-glow {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Button animations */
+    .btn-glow:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Navigation backdrop */
+    .nav-blur {
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg,#a78bfa,#7c3aed);
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg,#c4b5fd,#8b5cf6);
+    }
+  </style>
+</head>
+<body class="dark-gradient min-h-screen text-white font-sans">
+  <!-- Header Navigation -->
+  <header id="hero" class="nav-blur px-4 md:px-6 lg:px-12 py-4 md:py-5 shadow-2xl sticky top-0 z-50 w-full border-b border-gray-800">
+    <div class="flex items-center justify-between max-w-7xl mx-auto">
+      <!-- Logo & Brand -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 bg-gradient-to-br from-violet-700 to-violet-500 rounded-full flex items-center justify-center text-white font-semibold text-sm md:text-base group-hover:from-violet-600 group-hover:to-violet-400 transition-all duration-300">MR</div>
+        <span class="text-base md:text-lg font-bold hidden sm:inline group-hover:text-gray-300 transition-colors">Muhammad Rahmat Ali</span>
+      </a>
+      <!-- Navigation Menu -->
+      <nav class="flex items-center gap-4 md:gap-8">
+        <a href="#hero" class="hover:text-gray-300 text-xs md:text-sm transition-colors duration-300 hover-glow">Home</a>
+        <a href="#about" class="hover:text-gray-300 text-xs md:text-sm transition-colors duration-300 hover-glow">About</a>
+        <a href="#projects" class="hover:text-gray-300 text-xs md:text-sm transition-colors duration-300 hover-glow">Projects</a>
+        <a href="#services" class="hover:text-gray-300 text-xs md:text-sm transition-colors duration-300 hover-glow">Services</a>
+        <a href="#contact" class="hover:text-gray-300 text-xs md:text-sm transition-colors duration-300 hover-glow">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="grow">
+    <!-- Hero Section -->
+    <section class="flex flex-col lg:flex-row justify-center items-center gap-6 md:gap-12 lg:gap-20 mt-10 md:mt-16 lg:mt-20 px-4 scroll-animate">
+      <!-- Hero Text -->
+      <div class="h-auto w-full lg:w-2/5 text-center md:text-left text-2xl md:text-3xl px-4 md:px-5">
+        <p class="text-glow"><b class="text-3xl md:text-4xl text-gray-300">Hi</b>, I'm <b class="text-gray-200">Muhammad Rahmat Ali</b> — a student who enjoys learning and exploring new ideas.</p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#projects" class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 btn-glow text-center">View My Work</a>
+          <a href="#contact" class="border border-violet-600 hover:border-violet-500 text-violet-200 hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 text-center">Get In Touch</a>
+        </div>
+      </div>
+      <!-- Hero Card -->
+      <div class="h-auto w-full lg:w-2/5 items-center px-4 md:px-5 card-gradient rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover-lift flex flex-col md:flex-row gap-6 md:gap-10 py-8 md:py-0" style="min-height: 300px;">
+        <img class="rounded-full h-24 w-24 md:h-28 md:w-32 lg:h-32 lg:w-36 object-cover shrink-0 border-4 border-gray-700 shadow-lg" src="/assets/images/muhammad_rahmat_ali-prof.jpeg" alt="Muhammad Rahmat Ali profile picture">
+        <div class="text-center md:text-left">
+          <span class="text-2xl md:text-3xl font-semibold text-gray-200 block">Muhammad Rahmat Ali</span>
+          <span class="text-gray-400 text-sm md:text-base mt-2 block">Web Developer & Designer</span>
+          <div class="flex gap-3 mt-4 justify-center md:justify-start">
+            <div class="w-3 h-3 bg-violet-600 rounded-full"></div>
+            <div class="w-3 h-3 bg-violet-500 rounded-full"></div>
+            <div class="w-3 h-3 bg-violet-400 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 md:py-16 lg:py-20 px-4 scroll-animate">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200 mb-8 md:mb-12 text-center text-glow">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <!-- Project 1 -->
+          <div class="card-gradient rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 hover-lift flex flex-col border border-gray-800">
+            <div class="w-full h-32 bg-gradient-to-br rounded-lg mb-4 flex items-center justify-center">
+              <img src="/assets/images/muhammad_rahmat_ali-zyan-k0g1e.png" alt="portfolio website" class=" rounded-2xl">
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-3">Portfolio Website</h3>
+            <p class="text-gray-400 mb-4 text-sm md:text-base flex-grow">A modern, responsive portfolio website built with HTML, CSS, and Tailwind CSS to showcase skills and projects.</p>
+            <a href="#" class="text-white bg-violet-600 hover:bg-violet-700 px-4 py-2 rounded-lg font-medium transition-all duration-300 btn-glow flex justify-center text-sm md:text-base">View Project</a>
+          </div>
+          <!-- Project 2 -->
+          <div class="card-gradient rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 hover-lift flex flex-col border border-gray-800">
+            <div class="w-full h-32 bg-gradient-to-br  rounded-lg mb-4 flex items-center justify-center">
+              <img src="/assets/images/muhammad_rahmat_ali-Task-Manager-App-.png" alt="Task Manager App" class=" rounded-2xl p-2">
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-3">Task Manager App</h3>
+            <p class="text-gray-400 mb-4 text-sm md:text-base flex-grow">A simple task manager app with CRUD functionality built using JavaScript and local storage for persistence.</p>
+            <a href="#" class="text-white bg-violet-600 hover:bg-violet-700 px-4 py-2 rounded-lg font-medium transition-all duration-300 btn-glow flex justify-center text-sm md:text-base">View Project</a>
+          </div>
+          <!-- Project 3 -->
+          <div class="card-gradient rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 hover-lift flex flex-col border border-gray-800">
+            <div class="w-full h-32 bg-gradient-to-br  rounded-lg mb-4 flex items-center justify-center">
+              <img src="/assets/images/muhammad_rahmat_ali-Facebook_1200X628.jpg" alt="E-commerce Landing Page" class=" rounded-2xl p-2">
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-3">E-commerce Landing Page</h3>
+            <p class="text-gray-400 mb-4 text-sm md:text-base flex-grow">A responsive e-commerce landing page template with smooth scrolling, responsive layout, and modern design patterns.</p>
+            <a href="#" class="text-white bg-violet-600 hover:bg-violet-700 px-4 py-2 rounded-lg font-medium transition-all duration-300 btn-glow flex justify-center text-sm md:text-base">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 md:py-16 lg:py-20 px-4 scroll-animate">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-200 mb-8 md:mb-12 text-glow">My Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <!-- Service Card 1 -->
+          <div class="card-gradient border border-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift">
+            <div class="w-12 h-12 bg-violet-800 rounded-lg flex items-center justify-center mb-4">
+              <img class="p-0.5 " src="/assets/images/muhammad_rahmat_ali-graphic-design.png" alt="graphic design">
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-3">Web Designing</h3>
+            <p class="text-gray-400 text-sm md:text-base">I create clean, modern and responsive website designs that give users the best experience.</p>
+          </div>
+          <!-- Service Card 2 -->
+          <div class="card-gradient border border-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift">
+            <div class="w-12 h-12 bg-violet-800 rounded-lg flex items-center justify-center mb-4">
+              <img class="" src="/assets/images/muhammad_rahmat_ali-fixing.png" alt="warning">
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-3">Bug Fixing</h3>
+            <p class="text-gray-400 text-sm md:text-base">I fix layout issues, CSS bugs, responsive problems, and broken components quickly & efficiently.</p>
+          </div>
+          <!-- Service Card 3 -->
+          <div class="card-gradient border border-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift">
+            <div class="w-12 h-12 bg-violet-800 rounded-lg flex items-center justify-center mb-4">
+            <img class="" src="/assets/images/muhammad_rahmat_ali-customize.png" alt="customization">
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-3">Website Customization</h3>
+            <p class="text-gray-400 text-sm md:text-base">I customize any website to match your needs — sections, layouts, colors, UI improvements & more.</p>
+          </div>
+          <!-- Service Card 4 -->
+          <div class="card-gradient border border-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift">
+            <div class="w-12 h-12 bg-violet-800 rounded-lg flex items-center justify-center mb-4">
+              <img class="rounded-full " src="/assets/images/muhammad_rahmat_ali-rocket.png" alt="Rocket">
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-3">Full Website Setup</h3>
+            <p class="text-gray-400 text-sm md:text-base">From start to finish, I can build your complete website including design, coding and deployment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 md:py-16 lg:py-20 px-4 scroll-animate">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200 flex justify-center mb-8 md:mb-12 text-glow">About Me</h2>
+        <div class="card-gradient shadow-2xl rounded-2xl p-6 md:p-8 lg:p-10 border border-gray-800 hover:shadow-3xl transition-all duration-300">
+          <p class="text-gray-300 mb-4 text-sm md:text-base leading-relaxed">Hi, I'm <span class="font-semibold text-gray-200">Muhammad Rahmat Ali</span>, an aspiring developer and a student of <span class="font-semibold text-gray-200">ICS (Computer Science)</span> at Post Graduate College Sahiwal. I am currently learning <span class="font-semibold text-gray-200">Web Development</span> and exploring how to build clean, simple, and user-focused websites.</p>
+          <p class="text-gray-300 mb-4 text-sm md:text-base leading-relaxed">I also have a basic understanding of <span class="font-semibold text-gray-200">Python</span> and <span class="font-semibold text-gray-200">C++</span>, and I enjoy learning new technologies that help me grow as a developer. My goal is to improve my skills, create useful digital projects, and move forward step by step in the world of technology.</p>
+          <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm md:text-base mt-6">
+            <li class="hover:text-gray-200 transition-colors">Learning Web Development</li>
+            <li class="hover:text-gray-200 transition-colors">Basic Python Programming</li>
+            <li class="hover:text-gray-200 transition-colors">Basic C++ Programming</li>
+            <li class="hover:text-gray-200 transition-colors">Strong interest in practical and real-world projects</li>
+            <li class="hover:text-gray-200 transition-colors">Focused on continuous learning and improvement</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-12 md:py-16 lg:py-20 px-4 scroll-animate">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-200 mb-8 md:mb-12 text-glow">My Resume</h2>
+        <div class="card-gradient shadow-2xl border border-gray-800 rounded-2xl p-6 md:p-8 hover:shadow-3xl transition-all duration-300">
+          <!-- Personal Information -->
+          <h3 class="text-2xl md:text-3xl font-semibold text-gray-200 mb-4">Personal Information</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-sm md:text-base">
+            <p><span class="font-semibold text-gray-200">Full Name:</span> Muhammad Rahmat Ali</p>
+            <p><span class="font-semibold text-gray-200">Father's Name:</span> Maqsood Ahmad</p>
+            <p><span class="font-semibold text-gray-200">Date of Birth:</span> 19 Feb 2009</p>
+            <p><span class="font-semibold text-gray-200">Nationality:</span> Pakistani</p>
+            <p><span class="font-semibold text-gray-200">Religion:</span> Islam</p>
+            <p><span class="font-semibold text-gray-200">Gender:</span> Male</p>
+            <p><span class="font-semibold text-gray-200">Address:</span> Chak No 58/5L, Sahiwal, Punjab</p>
+            <p><span class="font-semibold text-gray-200">Phone:</span> 0321-9331610</p>
+            <p><span class="font-semibold text-gray-200">Email:</span> muhammadrahmatalimadni@gmail.com</p>
+          </div>
+          <hr class="my-6 md:my-8 border-gray-700">
+          <!-- Education -->
+          <h3 class="text-2xl md:text-3xl font-semibold text-gray-200 mb-4">Education</h3>
+          <div class="mb-6">
+            <h4 class="text-lg md:text-xl font-semibold text-gray-200">Matriculation (Science) – 2025</h4>
+            <p class="text-gray-400 text-sm md:text-base">BISE Sahiwal — 940/1200 Marks (Grade A)</p>
+          </div>
+          <div class="mb-6">
+            <h4 class="text-lg md:text-xl font-semibold text-gray-200">Intermediate (ICS) – In Progress</h4>
+            <p class="text-gray-400 text-sm md:text-base">Post Graduate College Sahiwal — Expected 2027</p>
+          </div>
+          <hr class="my-6 md:my-8 border-gray-700">
+          <!-- Skills -->
+          <h3 class="text-2xl md:text-3xl font-semibold text-gray-200 mb-4">Skills</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm md:text-base">
+            <li>HTML, CSS, Tailwind CSS</li>
+            <li>Web Designing</li>
+            <li>Bug Fixing</li>
+            <li>Website Customization</li>
+          </ul>
+          <hr class="my-6 md:my-8 border-gray-700">
+          <!-- Download Resume Button -->
+          <div class="text-center">
+            <a href="#" class="bg-violet-600 hover:bg-violet-700 text-white px-6 md:px-8 py-2 md:py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 btn-glow inline-block text-sm md:text-base">Download Resume (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 md:py-16 lg:py-20 px-4 mt-6 md:mt-10 mb-6 md:mb-10 scroll-animate">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200 mb-4 md:mb-6 text-glow">Contact Me</h2>
+        <p class="text-gray-400 text-base md:text-lg mb-8 md:mb-12">If you have a project in mind or want to work together, feel free to contact me anytime. I usually reply quickly.</p>
+        <!-- Contact Info Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-12">
+          <!-- Email -->
+          <a href="mailto:muhammadrahmatalimadni@gmail.com" class="block border border-gray-700 rounded-xl p-5 card-gradient transition-all duration-300 hover-lift hover:border-gray-600" aria-label="Email Muhammad Rahmat Ali">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <img class="bg-white rounded-full p-1" src="/assets/images/muhammad_rahmat_ali-mail.png" alt="Email">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold text-gray-200 mb-2">Email</h3>
+            <p class="text-gray-400 text-sm md:text-base whitespace-normal break-words" style="word-break:break-all;overflow-wrap:break-word;">muhammadrahmatalimadni@gmail.com</p>
+          </a>
+          <!-- Phone -->
+          <a href="tel:03219331610" class="block border border-gray-700 rounded-xl p-5 card-gradient transition-all duration-300 hover-lift hover:border-gray-600">
+            <div class="w-12 h-12   rounded-lg flex items-center justify-center mx-auto mb-3">
+              <img class="bg-white rounded-full p-1" src="/assets/images/muhammad_rahmat_ali-telephone-symbol-button.png" alt="Phone">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold text-gray-200 mb-2">Phone</h3>
+            <p class="text-gray-400 text-sm md:text-base">0321-9331610</p>
+          </a>
+          <!-- Location -->
+          <div class="block border border-gray-700 rounded-xl p-5 card-gradient transition-all duration-300 hover-lift hover:border-gray-600">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <img class="bg-white rounded-full p-1" src="/assets/images/muhammad_rahmat_ali-location.png" alt="Location">
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold text-gray-200 mb-2">Location</h3>
+            <p class="text-gray-400 text-sm md:text-base">Sahiwal, Punjab, Pakistan</p>
+          </div>
+        </div>
+        <!-- Social Links -->
+        <h3 class="text-2xl md:text-3xl font-semibold text-gray-200 mb-4 md:mb-6">Social Media</h3>
+        <div class="flex justify-center gap-6 md:gap-8 mb-10 md:mb-12">
+          <a href="https://www.instagram.com/muhammad_rahmat_ali_" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white text-lg md:text-xl font-medium transition-all duration-300 hover:scale-110">Instagram</a>
+          <a href="https://www.tiktok.com/@muhammad_rahmat_ali" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white text-lg md:text-xl font-medium transition-all duration-300 hover:scale-110">TikTok</a>
+        </div>
+        <!-- Contact Form -->
+        <form class="mt-8 md:mt-10 max-w-2xl mx-auto grid gap-4 md:gap-5">
+          <input type="text" placeholder="Your Name" class="w-full bg-violet-900 border border-violet-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-sm md:text-base transition-all duration-300" required>
+          <input type="email" placeholder="Your Email" class="w-full bg-violet-900 border border-violet-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-sm md:text-base transition-all duration-300" required>
+          <textarea placeholder="Your Message" rows="5" class="w-full bg-violet-900 border border-violet-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent text-sm md:text-base transition-all duration-300 resize-none" required></textarea>
+          <button type="submit" class="bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 btn-glow text-sm md:text-base">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10 mt-20 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- Brand / About -->
+            <div>
+            <h2 class="text-2xl font-semibold mb-3 text-gray-200">Muhammad Rahmat Ali</h2>
+            <p class="text-gray-400 leading-relaxed">
+                A passionate beginner developer creating clean, modern and responsive web experiences.
+            </p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div>
+            <h2 class="text-xl font-semibold mb-3 text-gray-200">Quick Links</h2>
+            <ul class="space-y-2 text-gray-400">
+                <li><a href="#projects" class="hover:text-white duration-200 transition-colors">Projects</a></li>
+                <li><a href="#about" class="hover:text-white duration-200 transition-colors">About</a></li>
+                <li><a href="#services" class="hover:text-white duration-200 transition-colors">Services</a></li>
+                <li><a href="#contact" class="hover:text-white duration-200 transition-colors">Contact</a></li>
+            </ul>
+            </div>
+
+            <!-- Social Icons -->
+            <div>
+            <h2 class="text-xl font-semibold mb-3 text-gray-200">Follow Me</h2>
+            <div class="flex items-center space-x-5 mt-2">
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/03219331610" target="_blank" rel="noopener noreferrer" class="hover:scale-110 duration-200 transition-transform bg-white rounded-full p-1 hover:bg-violet-600" >
+                <img src="/assets/icons/muhammad_rahmat_ali-whatsapp.png" class="w-8 h-8" alt="WhatsApp">
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@muhammad_rahmat_ali" target="_blank" rel="noopener noreferrer" class="hover:scale-110 duration-200 transition-transform bg-white rounded-full p-1 hover:bg-violet-600">
+                <img src="/assets/icons/muhammad_rahmat_ali-tiktok.png" class="w-8 h-8" alt="TikTok">
+                </a>
+
+                <!-- Facebook -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="hover:scale-110 duration-200 transition-transform bg-white rounded-full p-1 hover:bg-violet-600">
+                <img src="/assets/icons/muhammad_rahmat_ali-facebook.png" class="w-8 h-8" alt="Facebook">
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/muhammad_rahmat_ali_" target="_blank" rel="noopener noreferrer" class="hover:scale-110 duration-200 transition-transform bg-white rounded-full p-1 hover:bg-violet-600">
+                <img src="/assets/icons/muhammad_rahmat_ali-instagram.png" class="w-8 h-8" alt="Instagram">
+                </a>
+
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="text-center text-gray-500 mt-10 border-t border-gray-800 pt-5">
+            © 2025 Muhammad Rahmat Ali — All Rights Reserved.
+        </div>
+    </footer>
+
+  <script>
+    // Simple scroll animation trigger
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all elements with scroll-animate class
+    document.querySelectorAll('.scroll-animate').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
